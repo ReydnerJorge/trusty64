@@ -15,3 +15,6 @@ end
 
 >> Acesso a boxe
 -> vagrant ssh
+
+>> Recarregar 
+-> vagrant reload
