@@ -5,5 +5,9 @@ Vagrant.configure("2") do |config|
   config.vm.network "public_network"
   config.vm.provision "shell", path: "script.sh"
     ## inline: "apt update && apt -y install nginx && service nginx start"
-    config.vm.synced_folder "site/", "/var/www/html"
+  config.vm.synced_folder "site/", "/var/www/html"
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
 end
