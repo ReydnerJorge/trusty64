@@ -18,3 +18,6 @@ end
 
 >> Recarregar 
 -> vagrant reload
+
+>> Provision
+-> vagrant provision
